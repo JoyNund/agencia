@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel del Cliente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+  
+  <style>
+    /* Reset de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+/* Encabezado */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+/* Sección de contenido */
+section {
+    margin-top: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+/* Tabla para historial de pedidos */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f8f9fa;
+}
+
+/* Estilo para los gráficos */
+#graficos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+canvas {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Pie de página */
+footer {
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 8px;
+}
+
+/* Estilo para los botones */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #
+
+  </style>
+<body>
+    <header>
+        <h1>Bienvenido, [Nombre del Cliente]</h1>
+        <nav>
+            <ul>
+                <li><a href="/Dash/Index.html">Dashboard</a></li>
+                <li><a href="/Servicios/Index.html">Productos</a></li>
+                <li><a href="perfil.html">Mi Perfil</a></li>
+                <li><a href="/Index.html">Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="informacion-cliente">
+        <h2>Mis Datos</h2>
+        <p><strong>Nombre:</strong> [Nombre Completo]</p>
+        <p><strong>Email:</strong> [email@cliente.com]</p>
+        <p><strong>Teléfono:</strong> [Número de Teléfono]</p>
+        <p><strong>Dirección:</strong> [Dirección del Cliente]</p>
+    </section>
+
+    <section id="historial-pedidos">
+        <h2>Historial de Pedidos</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha</th>
+                    <th>Producto</th>
+                    <th>Estado</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2024-12-10</td>
+                    <td>Producto A</td>
+                    <td>Enviado</td>
+                </tr>
+                <tr>
+                    <td>2024-12-05</td>
+                    <td>Producto B</td>
+                    <td>Entregado</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Nombre de la Empresa]</p>
+    </footer>
+</body>
+</html>
